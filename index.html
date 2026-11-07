@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sri Andal Foods | Traditional Taste</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span></span>
+                <div>
+                    <h2>SRI ANDAL FOODS</h2>
+                    <small>Traditional Taste, Homemade Love</small>
+                </div>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#products" class="nav-btn">Order Now</a>
+
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        </nav>
+    </header>
+
+
+    <!-- HOME SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="tagline">AUTHENTIC SOUTH INDIAN FLAVOURS</span>
+
+            <h1>
+                Taste The Tradition,<br>
+                Love Every <span>Bite!</span>
+            </h1>
+
+            <p>
+                Bringing the authentic taste of traditional South Indian
+                foods to your home. Enjoy our delicious Appalam,
+                crispy Appalam Chips and flavourful Kolambu Milagai Powder.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">Explore Products</a>
+                <a href="#about" class="secondary-btn">Discover More</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="feature">
+            <h2>🌿</h2>
+            <h3>Traditional Taste</h3>
+            <p>Authentic South Indian flavours.</p>
+        </div>
+
+        <div class="feature">
+            <h2>❤️</h2>
+            <h3>Made with Care</h3>
+            <p>Prepared with attention to quality.</p>
+        </div>
+
+        <div class="feature">
+            <h2>✨</h2>
+            <h3>Quality Products</h3>
+            <p>Delicious products for every meal.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="logo.png"
+                 alt="Traditional Indian food">
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-tag">ABOUT OUR COMPANY</span>
+
+            <h2>Welcome to <span>Sri Andal Foods</span></h2>
+
+            <p>
+                Sri Andal Foods brings you the delicious taste of
+                traditional South Indian food products.
+
+                We believe that food is not just about taste;
+                it is about tradition, happiness and memories.
+            </p>
+
+            <p>
+                From crispy Appalam to flavourful Kolambu
+                Milagai Powder, our products bring a special
+                traditional touch to your everyday meals.
+            </p>
+
+            <a href="#products" class="primary-btn">View Our Products</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="products" id="products">
+
+        <div class="section-heading">
+
+            <span class="section-tag">OUR SPECIALITIES</span>
+
+            <h2>Our Delicious Products</h2>
+
+            <p>Discover the authentic taste of Sri Andal Foods.</p>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="35g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 35g Appalam</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 35g Appalam')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="75g.jpeg"
+                         alt="Appalam Chips">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>special 75g Appalam</h3>
+
+                    <p>
+                        Enjoy the irresistible crispy crunch
+                        of our delicious appalam chips.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Appalam Chips')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="r100g.jpeg"
+                         alt="Special 100g Kattu Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">AUTHENTIC FLAVOUR</span>
+
+                    <h3>Special 100g Kattu Appalam</h3>
+
+                    <p>
+                        Add traditional South Indian flavour
+                        and delicious taste to your everyday cooking.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 100g Kattu Appalam')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--product 4-->
+             <div class="product-card">
+
+                <div class="product-image">
+                    <img src="g150g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 150g Kattu Appalam</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 150g Kattu Appalam')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--product 5-->
+             <div class="product-card">
+
+                <div class="product-image">
+                    <img src="200g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 200g Kattu Appalam</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 200g Kattu Appalam')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--product 6-->
+             <div class="product-card">
+
+                <div class="product-image">
+                    <img src="poo35g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 35g Appala Poo</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 35g Appala Poo')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--product 7-->
+             <div class="product-card">
+
+                <div class="product-image">
+                    <img src="poo100g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 100g Appala poo</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 100g Appala Poo')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--product 8-->
+             <div class="product-card">
+
+                <div class="product-image">
+                    <img src="poo200g.jpeg"
+                         alt="Appalam">
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-label">TRADITIONAL SPECIAL</span>
+
+                    <h3>Special 200g Appala poo</h3>
+
+                    <p>
+                        Crispy and delicious traditional appalam
+                        that makes every meal special.
+                    </p>
+
+                    <div class="product-bottom">
+                        <h4>Contact for Price</h4>
+                        <button onclick="orderProduct('Special 200g Appala Poo')">
+                            Order Now →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANNER -->
+
+    <section class="banner">
+
+        <div>
+            <h2>Bringing Tradition to Your Table!</h2>
+            <p>Experience the authentic taste of South India with Sri Andal Foods.</p>
+            <a href="#contact" class="banner-btn">Contact Us</a>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+
+            <span class="section-tag">GET IN TOUCH</span>
+
+            <h2>Contact Sri Andal Foods</h2>
+
+            <p>We would love to hear from you!</p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-box">
+
+                <h2>📍</h2>
+                <h3>716,MadhuraKaliamman kovil street ,Sinthamanikuppam,cuddalore</h3>
+                <p>Tamil Nadu, India</p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h2>📞</h2>
+                <h3>Phone Number</h3>
+                <p>+91 9791378372</p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h2>💬</h2>
+                <h3>WhatsApp</h3>
+                <p>Connect with us for orders.</p>
+
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/91XXXXXXXXXX"
+           class="whatsapp-btn" target="_blank">
+            Chat With Us on WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>🌿 SRI ANDAL FOODS</h2>
+
+        <p>Traditional Taste, Homemade Love.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Sri Andal Foods. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
