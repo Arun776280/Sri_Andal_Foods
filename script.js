@@ -15,7 +15,7 @@ function toggleMenu() {
 function orderProduct(productName) {
 
     // Replace with your WhatsApp number
-    let phoneNumber = "9791378372";
+    let phoneNumber = "919791378372";
 
     let message = "Hello Sri Andal Foods! I am interested in ordering " +
                   productName + ". Please share the price and details.";
